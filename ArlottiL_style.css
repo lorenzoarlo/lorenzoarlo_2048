@@ -1,0 +1,199 @@
+/* ----- ROOT ----- */
+
+:root {
+    --document_BackgroundColor: #FAF8EF;
+    --board_BackgroundColor: #BBADA0;
+
+    --valueBackground_BackgroundColor: #CDC1B4;
+    
+    --value2_BackgroundColor: #EEE4DA;
+    --value2_4_FontColor: #776E65;
+
+    --value4_BackgroundColor: #EEE1C9;
+
+    --value8_BackgroundColor: #F3B27A;
+    --value8_16_32_64_128_256_1024_2048_FontColor: #F9F6F2;
+
+    --value16_BackgroundColor: #F69664;
+
+    --value32_BackgroundColor: #F77C5F;
+
+    --value64_BackgroundColor: #F75F3B;
+
+    --value128_BackgroundColor: #EDD073;
+
+    --value256_BackgroundColor: #EDCC62;
+
+    --value512_BackgroundColor: #FAF8EF;
+    --value512_FontColor:#776E65;
+
+    --value1024_BackgroundColor: #EDC53F;
+    
+    --value2048_BackgroundColor: #EDC22E;
+}
+
+body {
+    background-color: var(--document_BackgroundColor);
+    padding: 0;
+}
+
+/* ----- CONTAINERS ----- */
+
+.container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* ----- TITLE AND SUBTITLE ----- */
+
+.title, .subtitle {
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    margin: 5px;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.subtitle {
+    font-size: 24px;
+
+    font-style: italic;
+}
+
+/* ----- NEW GAME BUTTON ----- */
+
+/* .newGame-button {
+    display: block;
+
+    background-color: var(--value2_BackgroundColor);
+    
+    border-color: var(--valueBackground_BackgroundColor);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+
+    padding: 10px;
+
+    font-size: 24px;
+    color: var(--value2_4_FontColor);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.newGame-button:hover{
+    background-color: var(--valueBackground_BackgroundColor);
+    
+    cursor: pointer;
+
+    transition-duration: 300ms;
+}
+
+.newGame-button:focus {
+    outline: none;
+} */
+
+/* ----- GAME STYLES ----- */
+
+.board-2048 {
+    display: grid;
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: var(--board_BackgroundColor);
+
+    border-radius: 1%;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.tile {
+    display: flex;
+    position: relative;
+    box-sizing: content-box;
+    
+    user-select: none;
+
+    margin: 8%;   
+    border-radius: 5%;
+    
+    font-weight: bolder;
+    font-size: 52px;
+    color: black;
+
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.value-background {
+    background-color: var(--valueBackground_BackgroundColor);   
+}
+
+.value-2 {
+    background-color: var(--value2_BackgroundColor);
+    color: var(--value2_4_FontColor);
+}
+
+.value-4 {
+    background-color:var(--value4_BackgroundColor);
+    color: var(--value2_4_FontColor);
+}
+
+.value-8 {
+    background-color: var(--value8_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-16 {
+    background-color: var(--value16_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-32 {
+    background-color:var(--value32_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-64 {
+    background-color:var(--value64_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-128 {
+    background-color: var(--value128_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-256 {
+    background-color: var(--value256_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-512 {
+    background-color: var(--value512_BackgroundColor);
+    color: var(--value512_FontColor);
+}
+
+.value-1024 {
+    background-color: var(--value1024_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
+
+.value-2048 {
+    background-color: var(--value2048_BackgroundColor);
+    color: var(--value8_16_32_64_128_256_1024_2048_FontColor);
+}
